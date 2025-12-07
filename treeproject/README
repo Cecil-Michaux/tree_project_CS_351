@@ -1,0 +1,129 @@
+INSTRUCTIONS: 
+Mini-Project 3: Tree Applications
+
+
+B-Tree
+
+Use Case: Database indexing, file systems
+
+Key Operations: Insert, delete, search, range query
+
+Why It's Cool: The backbone of almost every database system you use!
+
+Deliverable: TREE_DESIGN.md
+
+Create a markdown document that includes:
+
+    Tree Selection: Which tree did you choose and why?
+    Use Cases: What problems does this tree solve well?
+    Properties: What makes this tree unique? What are its performance characteristics?
+    Interface Design: Method signatures with descriptions
+        What operations does your tree support?
+        What are the parameters and return types?
+        What is the Big-O time complexity of each operation? (Required for every method)
+        What is the space complexity? (if relevant)
+    Implementation Notes: Key algorithms or techniques you'll use
+
+Complexity Analysis Required: Every method in your interface must include its Big-O time complexity. For example: insert(value) - O(log n) or search(key) - O(h) where h is height. If space complexity is non-trivial (not O(1)), document that as well.
+⚠️ Important: Your initial interface is a starting point. You will likely need to add methods or modify signatures as you build your application. Document these changes in your final submission!
+
+Part 2: Application Development
+Building Something Real
+
+Create an application that demonstrates the practical utility of your tree structure. Your application should:
+
+    Solve a real problem - not just demonstrate basic operations
+    Use actual data - load from files, APIs, or generate meaningfully
+    Provide a user interface - CLI, GUI, or web interface
+    Show performance benefits - why is a tree better than a simple list/array?
+
+Application Ideas by Tree Type
+Tree Type 	Application Ideas
+Trie 	• Autocomplete system for code, cities, or dictionary words
+• Spell checker with suggestions
+• Word game solver (Scrabble, Boggle)
+• Search history manager
+Quadtree 	• Image compression/decompression tool
+• Collision detection visualization
+• Geographic data browser (points of interest)
+• Particle system with spatial optimization
+Heap 	• Task scheduler with priorities
+• Event queue simulator
+• Top-K elements finder (trending topics)
+• Merge sorted files utility
+B-Tree 	• Simple database system with indexing
+• File system simulator
+• Contact manager with fast lookups
+• Student record system
+Segment Tree 	• Stock price analyzer (range min/max/sum)
+• Text editor with formatting ranges
+• Game score tracker with range queries
+• Temperature data analyzer
+Red-Black Tree 	• Ordered dictionary with range operations
+• Music library organizer
+• Interval scheduler
+• Sorted set operations visualizer
+Success Criteria for Your Application:
+1. It works and doesn't crash on typical inputs
+2. It demonstrates at least 4-5 different tree operations
+3. It handles edge cases gracefully
+4. Users can understand what it does and how to use it
+5. It shows why the tree structure is beneficial for this use case
+The Iterative Process
+
+As you build your application, you'll likely discover:
+
+    "I need a method to find the height of my tree for visualization"
+    "My tree needs to support serialization to save/load state"
+    "I should add an iterator to traverse the tree in a specific order"
+    "My application needs bulk insert/delete operations"
+
+Document Your Journey
+In your README, include a section called "Evolution of the Interface" where you describe what methods you added or changed after your initial design, and why you needed those changes. This reflection is valuable!
+Submission Requirements
+GitHub Repository Structure
+
+your-project-name/
+├── README.md                 # Main project documentation
+├── TREE_DESIGN.md           # Part 1: Tree interface and design
+├── src/                     # Your source code
+│   ├── tree.py/tree.rs      # Tree implementation
+│   ├── application.py/.rs   # Application code
+│   └── ...                  # Other modules as needed
+├── tests/                   # Unit tests (optional but encouraged)
+├── data/                    # Sample data files
+├── screenshots/             # Application screenshots
+└── requirements.txt         # Dependencies (if applicable)
+
+README.md Must Include
+
+    Project Title and Description
+        What tree did you implement?
+        What does your application do?
+        Who would use this and why?
+    Team Members
+        Names and roles (if group project)
+    Installation & Setup
+        Prerequisites (Python version, libraries, etc.)
+        Step-by-step setup instructions
+        How to run the application
+    Usage Guide
+        How to use your application
+        Example commands or interactions
+        Expected input/output
+    Screenshots/Demos
+        At least 3 screenshots showing your application in action
+        Annotate what we're looking at if it's not obvious
+    Tree Implementation Details
+        Brief explanation of how your tree works
+        Time/space complexity of key operations
+        Any interesting implementation choices
+    Evolution of the Interface
+        What changed from your initial design?
+        Why did you need those changes?
+        What did you learn from this iterative process?
+    Challenges & Solutions
+        What was hard?
+        How did you solve tough problems?
+    Future Enhancements
+        What would you add with more time?
